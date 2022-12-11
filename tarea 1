@@ -1,0 +1,25 @@
+public class Main {
+    public static void main(String[] args) {
+        int resultado;
+        resultado = suma(12 , 23 , 31);
+        System.out.println(resultado);
+
+        coche tesla = new coche();
+        tesla.ponerpuerta() ;
+        tesla.ponerpuerta() ;
+        System.out.println(tesla.puerta);
+
+    }
+
+    public static int suma(int a, int b, int c) {
+        return a + b + c;
+    }
+}
+
+class coche {
+    public int puerta = 0;
+    public void ponerpuerta() {
+        this.puerta += 1 ;
+    }
+
+}
